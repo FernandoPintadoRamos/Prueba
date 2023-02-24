@@ -11,6 +11,13 @@ document.getElementById("cif").innerHTML = cif;
 document.getElementById("email").innerHTML = email;
 document.getElementById("telefono").innerHTML = telefono;
 
+// FCONSIGNATARIO
+var nombreConsig = urlParams.get('nombreConsig');
+var direccionConsig = urlParams.get('direccionConsig');
+
+document.getElementById("nombreConsig").innerHTML = nombreConsig;
+document.getElementById("direccionConsig").innerHTML = direccionConsig;
+
 // FFACUTURAS
 var numero = urlParams.get('numero');
 var fecha = urlParams.get('fecha');

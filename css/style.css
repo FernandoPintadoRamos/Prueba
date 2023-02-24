@@ -38,13 +38,14 @@ article{
 
 #logo{
     width: 10vw;
+    height: 10vw;
 }
 
 .dest{
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 20% 20% 1fr;
+    grid-template-columns: 0.5fr 1fr 2fr;
     border-bottom: 1px solid #b6b6b6;
     padding-bottom: 2vw;
     margin-bottom: 2vw;
