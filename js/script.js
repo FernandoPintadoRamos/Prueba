@@ -14,9 +14,11 @@ document.getElementById("telefono").innerHTML = telefono;
 // FCONSIGNATARIO
 var nombreConsig = urlParams.get('nombreConsig');
 var direccionConsig = urlParams.get('direccionConsig');
+var provinciaConsig = urlParams.get('provinciaConsig');
 
 document.getElementById("nombreConsig").innerHTML = nombreConsig;
 document.getElementById("direccionConsig").innerHTML = direccionConsig;
+document.getElementById("provinciaConsig").innerHTML = provinciaConsig;
 
 // FFACUTURAS
 var numero = urlParams.get('numero');
