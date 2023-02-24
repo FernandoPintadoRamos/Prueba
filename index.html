@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="container">
-        hola
+        <input type="text" id="Nombre">
     </div>
 </body>
 <script>
     const valores = window.location.search;
-    alert(valores);
+    document.getElementById("Nombre").value = valores;
 </script>
 </html>
