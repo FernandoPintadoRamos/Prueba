@@ -13,7 +13,7 @@ body{
 }
 
 .container h1{
-    font-size: x-large;
+    font-size: 4vw;
     text-align: center;
 }
 
@@ -22,5 +22,5 @@ body{
 }
 
 .informacion h2{
-    font-size: larger;
+    font-size: 2vw;
 }
