@@ -3,11 +3,11 @@ const urlParams = new URLSearchParams(valores);
 // FDATOS
 var direccion = urlParams.get('direccion');
 var cif = urlParams.get('cif');
-var cif = urlParams.get('email');
+var email = urlParams.get('email');
 
 document.getElementById("direccion").innerHTML = direccion;
 document.getElementById("cif").innerHTML = cif;
-document.getElementById("email").innerHTML = cif;
+document.getElementById("email").innerHTML = email;
 
 // FFACUTURAS
 var numero = urlParams.get('numero');
