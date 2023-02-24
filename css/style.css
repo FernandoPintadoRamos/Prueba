@@ -13,9 +13,14 @@ body{
 }
 
 .container h1{
+    font-size: x-large;
     text-align: center;
 }
 
 .informacion{
     border: 1px solid black;
+}
+
+.informacion h2{
+    font-size: larger;
 }
