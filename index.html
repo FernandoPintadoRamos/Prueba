@@ -5,37 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    body{
-        border-top: 10px solid #cac7c7;
-    }
-
-    .container{
-        width: 80%;
-        border: 1px solid black;
-        margin: auto;
-    }
-
-    .container h1{
-        text-align: center;
-    }
 </style>
 <body>
     <div class="container">
         <h1>Factura</h1>
 
-        <h2>Informacion</h2>
+        <div class="informacion">
+            <h2>Informacion</h2>
+            
+            <div class="info">
+                <label>Nombre:</label>
+                <label id="Nombre"></label>
+            </div>
 
-        <label>Nombre:</label>
-        <label id="Nombre"></label>
+            <div class="info">
+                <label>Apellido:</label>
+                <label id="Apellido"></label>
+            </div>
+        </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </html>
