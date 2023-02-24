@@ -4,23 +4,86 @@
 }
 
 body{
-    border-top: 10px solid #cac7c7;
+    font-family: sans-serif;
+}
+
+p, strong{
+    font-size: 2vw;
+}
+
+header{
+    padding: 5vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.info{
+    align-items: end;
+    text-align: right;
 }
 
 .container{
-    width: 80%;
+    width: 90%;
     margin: auto;
-}
-
-.container h1{
-    font-size: 4vw;
-    text-align: center;
-}
-
-.informacion{
     border: 1px solid black;
 }
 
-.informacion h2{
-    font-size: 2vw;
+#logo{
+    width: 100px;
+}
+
+.dest{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 20% 1fr;
+    border-bottom: 1px solid #b6b6b6;
+    padding-bottom: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 3vw;
+}
+
+.destinatario{
+    align-items: start;
+}
+
+.info-fac{
+    justify-self: end;
+    text-align: right;
+}
+
+.det{
+    width: 90%;
+    margin: auto;
+}
+
+.cabecera{
+    display: grid;
+    padding-bottom: 2vw;
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.datos{
+    margin: auto;
+    height: 150px;
+    border-bottom: 1px solid #b6b6b6;
+    margin-bottom: 2vw;
+}
+
+.totales{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.total-fac{
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-bottom: 1px solid #b6b6b6;
+    margin-bottom: 2vw;
+    gap: 2vw;
 }
