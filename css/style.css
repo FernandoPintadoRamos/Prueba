@@ -31,9 +31,7 @@ article{
 }
 
 .container{
-    width: 90%;
     margin: auto;
-    border: 1px solid black;
 }
 
 #logo{
@@ -50,6 +48,10 @@ article{
     padding-bottom: 2vw;
     margin-bottom: 2vw;
     margin-top: 3vw;
+}
+
+.dest p{
+    margin-top: 1vw;
 }
 
 .destinatario{
