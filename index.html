@@ -9,11 +9,13 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" id="Nombre">
+        <label id="Nombre"></label>
     </div>
 </body>
 <script>
     const valores = window.location.search;
-    document.getElementById("Nombre").value = valores;
+    const urlParams = new URLSearchParams(valores);
+    var nombre = urlParams.get('Nombre');
+    document.getElementById("Nombre").innerHTML = nombre;
 </script>
 </html>
