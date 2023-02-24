@@ -26,6 +26,10 @@ article{
     text-align: right;
 }
 
+.info p{
+    padding: 0.40vw;
+}
+
 .container{
     width: 90%;
     margin: auto;
