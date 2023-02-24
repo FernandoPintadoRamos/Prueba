@@ -7,7 +7,7 @@ body{
     font-family: sans-serif;
 }
 
-p, strong{
+p, strong, label{
     font-size: 1.5vw;
 }
 
@@ -23,11 +23,13 @@ article{
 
 .info{
     align-items: end;
-    text-align: right;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.info p{
-    padding: 0.40vw;
+.info #direccion{
+    grid-column: 1 / -1;
 }
 
 .container{
@@ -61,6 +63,8 @@ article{
 .info-fac{
     justify-self: end;
     text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .det{
