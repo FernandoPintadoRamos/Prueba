@@ -1,8 +1,8 @@
 const valores = window.location.search;
 const urlParams = new URLSearchParams(valores);
 
-var nombre = urlParams.get('Nombre');
-var apellido = urlParams.get('Apellido');
+var numero = urlParams.get('numero');
+var fecha = urlParams.get('fecha');
 
-document.getElementById("Nombre").innerHTML = nombre;
-document.getElementById("Apellido").innerHTML = apellido;
+document.getElementById("numero").innerHTML = numero;
+document.getElementById("fecha").innerHTML = fecha;
