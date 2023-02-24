@@ -8,7 +8,7 @@ body{
 }
 
 p, strong{
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 header{
@@ -17,6 +17,9 @@ header{
     justify-content: space-between;
     border-bottom: 1px solid #b6b6b6;
 }
+
+article{
+    border-bottom: 1px solid #b6b6b6;}
 
 .info{
     align-items: end;
@@ -61,8 +64,13 @@ header{
 .cabecera{
     display: grid;
     padding-bottom: 2vw;
-    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     border-bottom: 1px solid #b6b6b6;
+    text-align: center;
+}
+
+.cabecera:first-child{
+    text-align: left;
 }
 
 .datos{
@@ -70,20 +78,38 @@ header{
     height: 150px;
     border-bottom: 1px solid #b6b6b6;
     margin-bottom: 2vw;
+    text-align: center;
 }
 
-.totales{
+.datos:first-child{
+    text-align: left;
+}
+
+.totales, .importes{
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: end;
 }
 
-.total-fac{
+.total-fac, .importe{
     width: 40vw;
     display: grid;
     grid-template-columns: 2fr 1fr;
     border-bottom: 1px solid #b6b6b6;
     margin-bottom: 2vw;
+    padding-bottom: 2vw;
     gap: 2vw;
+}
+
+.importe strong{
+    font-size: 2vw;
+}
+
+.importe{
+    border: 0;
+}
+
+footer{
+    height: 150px;
 }
