@@ -6,7 +6,7 @@ var cif = urlParams.get('cif');
 var email = urlParams.get('email');
 var telefono = urlParams.get('telefono');
 
-document.getElementById("direccion").innerHTML = direccion.replace("_", " ");
+document.getElementById("direccion").innerHTML = direccion.replaceAll("_", " ");
 document.getElementById("cif").innerHTML = cif;
 document.getElementById("email").innerHTML = email;
 document.getElementById("telefono").innerHTML = telefono;
@@ -17,9 +17,9 @@ var direccionConsig = urlParams.get('direccionConsig');
 var provinciaConsig = urlParams.get('provinciaConsig');
 var cifConsig = urlParams.get('cifConsig');
 
-document.getElementById("nombreConsig").innerHTML = nombreConsig.replace("_", " ");
-document.getElementById("direccionConsig").innerHTML = direccionConsig.replace("_", " ");
-document.getElementById("provinciaConsig").innerHTML = provinciaConsig.replace("_", " ");
+document.getElementById("nombreConsig").innerHTML = nombreConsig.replaceAll("_", " ");
+document.getElementById("direccionConsig").innerHTML = direccionConsig.replaceAll("_", " ");
+document.getElementById("provinciaConsig").innerHTML = provinciaConsig.replaceAll("_", " ");
 document.getElementById("cifConsig").innerHTML = cifConsig;
 
 // FFACUTURAS
