@@ -70,6 +70,7 @@ article{
 .det{
     width: 90%;
     margin: auto;
+    margin-bottom: 2vw;
 }
 
 .cabecera{
@@ -85,15 +86,18 @@ article{
 }
 
 .datos{
-    margin: auto;
-    height: 150px;
+    display: grid;
+    padding-bottom: 2vw;
+    grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     border-bottom: 1px solid #b6b6b6;
-    margin-bottom: 2vw;
     text-align: center;
 }
 
-.datos:first-child{
+
+.datos p{
     text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .totales, .importes{

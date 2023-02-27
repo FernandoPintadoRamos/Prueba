@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
 </head>
 <style>
 </style>
+
 <body>
     <div class="container">
         <header>
@@ -27,11 +29,6 @@
                 <p>Factura a:</p>
 
                 <div class="destinatario">
-                    <!-- <p>Prueba</p>
-                    <p>Prueba</p>
-                    <p>Prueba</p>
-                    <p>Prueba</p>
-                    <p>Prueba</p> -->
                     <p><label id="nombreConsig"></label></p>
                     <p><label id="direccionConsig"></label></p>
                     <p><label id="provinciaConsig"></label></p>
@@ -56,7 +53,7 @@
                     <p>Importe</p>
                 </div>
 
-                <div class="datos">
+                <div class="datos" id="detalles">
 
                 </div>
             </div>
@@ -64,7 +61,7 @@
             <div class="totales">
                 <div class="total-fac">
                     <p>Subtotal sin IVA</p>
-                    <label for=""></label>
+                    <label id="subtotal_sinIVA"></label>
                     <p>Descuento 5%</p>
                     <label for=""></label>
                     <p>IVA 21%</p>
@@ -89,4 +86,5 @@
     </div>
 </body>
 <script src="js/script.js"></script>
+
 </html>
