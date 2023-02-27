@@ -6,7 +6,7 @@ var cif = urlParams.get('cif');
 var email = urlParams.get('email');
 var telefono = urlParams.get('telefono');
 
-document.getElementById("direccion").innerHTML = direccion;
+document.getElementById("direccion").innerHTML = direccion.replace("_", " ");
 document.getElementById("cif").innerHTML = cif;
 document.getElementById("email").innerHTML = email;
 document.getElementById("telefono").innerHTML = telefono;
@@ -17,9 +17,9 @@ var direccionConsig = urlParams.get('direccionConsig');
 var provinciaConsig = urlParams.get('provinciaConsig');
 var cifConsig = urlParams.get('cifConsig');
 
-document.getElementById("nombreConsig").innerHTML = nombreConsig;
-document.getElementById("direccionConsig").innerHTML = direccionConsig;
-document.getElementById("provinciaConsig").innerHTML = provinciaConsig;
+document.getElementById("nombreConsig").innerHTML = nombreConsig.replace("_", " ");
+document.getElementById("direccionConsig").innerHTML = direccionConsig.replace("_", " ");
+document.getElementById("provinciaConsig").innerHTML = provinciaConsig.replace("_", " ");
 document.getElementById("cifConsig").innerHTML = cifConsig;
 
 // FFACUTURAS
@@ -44,7 +44,7 @@ for(i = 0; i < parseInt(dets); i++){
     var det_desc = urlParams.get('det_name' + i);
     var det_imp  = urlParams.get('det_imp'  + i); 
 
-    p1.innerHTML = det_desc;
+    p1.innerHTML = det_desc.replace("_", " ");
     p2.innerHTML = "1";
     p3.innerHTML = "Unidad";
     p4.innerHTML = det_imp + " €";

@@ -89,7 +89,7 @@ article{
     display: grid;
     padding-bottom: 2vw;
     grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    border-bottom: 1px solid #b6b6b6;
+    /* border-bottom: 1px solid #b6b6b6; */
     text-align: center;
 }
 
