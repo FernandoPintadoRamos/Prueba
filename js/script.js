@@ -26,7 +26,8 @@ document.getElementById("cifConsig").innerHTML = cifConsig;
 var numero = urlParams.get('numero');
 var fecha = urlParams.get('fecha');
 
-
+document.getElementById("numero").innerHTML = numero;
+document.getElementById("fecha").innerHTML = fecha;
 
 // FDETALLE
 var dets = parseInt(urlParams.get('dets'));
@@ -58,12 +59,19 @@ for(i = 0; i < parseInt(dets); i++){
     detalles.appendChild(p5);
     detalles.appendChild(p6);
 
-    imp_total = imp_total + parseFloat(det_imp);
+    imp_total = parseFloat(imp_total) + parseFloat(det_imp.replaceAll(",", "."));
 }
 
+// IVA
+var iva = 21
+document.getElementById("IVA").innerHTML = iva;
+
+
 // TOTALES
-document.getElementById("subtotal_sinIVA").innerHTML = imp_total.toFixed(2) + " €";
+document.getElementById("subtotal_sinIVA").innerHTML = imp_total.toFixed(2).toString().replaceAll(".", ",") + " €";
 
+if (iva != 0) {
+    imp_total = imp_total + (imp_total * iva) / 100
+}
 
-document.getElementById("numero").innerHTML = numero;
-document.getElementById("fecha").innerHTML = fecha;
+document.getElementById("importePagar").innerHTML = imp_total.toFixed(2).toString().replaceAll(".", ",") + " €";
