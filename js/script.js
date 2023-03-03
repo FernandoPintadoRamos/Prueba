@@ -63,7 +63,7 @@ for(i = 0; i < parseInt(dets); i++){
 }
 
 // IVA
-var iva = 21
+var iva = 0 // Mandar parametro para el iva
 document.getElementById("IVA").innerHTML = iva;
 
 
